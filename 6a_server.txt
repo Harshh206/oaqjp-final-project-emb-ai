@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from EmotionDetection.emotion_detection import emotion_detector
+from emotion_detection import emotion_detector
 
 app = Flask(__name__)
 
@@ -14,11 +14,10 @@ def emotion_detector_route():
 
     result = emotion_detector(text_to_analyze)
 
-    # Handle invalid input
-    if result is None or result['dominant_emotion'] is None:
-        return "Invalid text! Please try again."
+    # ✅ Handle blank input case
+    if result["dominant_emotion"] is None:
+        return "Invalid text! Please try again!"
 
-    # Format response as required
     response = (
         f"For the given statement, the system response is "
         f"'anger': {result['anger']}, "
