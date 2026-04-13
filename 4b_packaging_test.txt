@@ -1,0 +1,9 @@
+Python 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from EmotionDetection import emotion_detector
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/theia/final_projec/final-project/EmotionDetection/__init__.py", line 1, in <module>
+    from .emotion_detection import emotion_detector
+ModuleNotFoundError: No module named 'EmotionDetection.emotion_detection'
+>>> from EmotionDetection import emotion_detector
