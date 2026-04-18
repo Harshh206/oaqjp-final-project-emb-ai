@@ -1,8 +1,0 @@
-python3 test_emotion_detection.py
-python3: can't open file '/home/theia/final_projec/final-project/test_emotion_detection.py': [Errno 2] No such file or directory
-theia@theiadocker-harshh7889:~/final_projec/final-project$ python3 test_emotion_detection.py
-.....
-----------------------------------------------------------------------
-Ran 5 tests in 0.712s
-
-OK
